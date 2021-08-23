@@ -1,0 +1,8 @@
+<p>dictionary works!</p>
+<button (click)="list()">List</button>
+
+<input type="text" #word (change)="search(word.value)">
+<p>{{mean}}</p>
+
+<i *ngFor="let element of iwords"><p>{{element.word}} : {{element.mean}}</p><br/></i>
+
